@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ITRI Translated Report</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  body {
+    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+    font-size: 12pt;
+  }
+  .title {
+    font-weight: bold;
+  }
+  .table {
+    border-collapse: collapse;
+    width: 600px;
+  }
+  .table th, .table td {
+    border: 1px solid black;
+  }
+  .field {
+    background: #595959;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    padding: 4px;
+  }
+  .value {
+    background: white;
+    padding: 4px;
+  }
+  </style>
+</head>
+<body>
+  {{#each results}}
+    <div class="title">{{title}}</div>
+    <table class="table">
+      <tr><th class="field">要聞編號</th><td class="value" colspan="3">{{id}}</td></tr>
+      <tr><th class="field">體系類型</th><td class="value">{{category}}</td><th class="field">推動內涵</th><td class="value">{{label}}</td></tr>
+      <tr><th class="field">標題名稱</th><td class="value" colspan="3"><b>{{title}}</b></td></tr>
+      <tr><th class="field">要聞內容</th><td class="value" colspan="3">{{content}}</td></tr>
+      <tr><th class="field">我國借鏡與中小企業政策因應</th><td class="value" colspan="3">{{learn}}</td></tr>
+      <tr><th class="field">發布日期</th><td class="value" colspan="3">{{date}}</td></tr>
+      <tr><th class="field">資料來源</th><td class="value" colspan="3">{{source}}</td></tr>
+      <tr><th class="field">發佈網址</th><td class="value" colspan="3"><a href="{{url}}">{{url}}</a></td></tr>
+    </table>
+  {{/each}}
+</body>
+</html>
