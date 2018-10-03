@@ -15,7 +15,7 @@
     "async": "^2.1.4",
     "csvtojson": "^1.0.3",
     "express": "4.13.3",
-    "google-translate-api": "^2.3.0",
+    "google-translate-api": "git+https://git@github.com/hankhsiao/google-translate-api",
     "handlebars": "^4.0.6",
     "inline-css": "^2.2.2",
     "request": "^2.79.0",
